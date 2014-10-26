@@ -53,6 +53,10 @@ DATABASES = {
     }
 }
 
+MONGO_DB_SETTINGS = {
+    'host': 'localhost',
+    'port': 27017,
+}
 
 
 LANGUAGE_CODE = 'en-us'
@@ -66,9 +70,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
-
-
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
 
 try:
     from local_settings import *
