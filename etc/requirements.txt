@@ -1,0 +1,7 @@
+Django
+
+#ipdb
+#ipython
+
+#pymongo
+#psycopg2

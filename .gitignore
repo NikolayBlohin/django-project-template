@@ -1,0 +1,16 @@
+*.py[co]
+*~
+\#*\#
+*.swp
+db.*
+
+data/
+env/
+etc/logs/*
+src/static/upload
+
+
+.DS_Store
+
+
+local_settings.py
