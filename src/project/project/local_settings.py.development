@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
+import os
+from django.conf import settings
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+
+if DEBUG:
+    STATICFILES_DIRS = (
+        os.path.join(settings.BASE_DIR, 'static'),
+        settings.STATIC_URL,
+    )
