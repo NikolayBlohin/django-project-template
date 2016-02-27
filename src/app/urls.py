@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from app import views
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^$', views.index, name='index'),
-)
+]
